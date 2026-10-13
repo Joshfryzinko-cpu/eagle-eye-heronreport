@@ -238,6 +238,28 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
   .stat+.stat::before{display:none}
   .search-bar button{padding:0 16px;font-size:.72rem}
 }
+
+/* ─── NEWS SECTION ─── */
+.news-divider{display:flex;align-items:center;gap:16px;margin:56px 0 32px;max-width:1280px;margin-left:auto;margin-right:auto;padding:0 28px}
+.news-divider-line{flex:1;height:1px;background:var(--border)}
+.news-divider-label{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);white-space:nowrap}
+.news-section{max-width:1280px;margin:0 auto;padding:0 28px 64px}
+.news-date{font-size:.7rem;color:var(--muted);margin-bottom:24px;font-weight:500}
+.news-top{display:grid;grid-template-columns:1fr 340px;gap:32px;margin-bottom:32px}
+@media(max-width:900px){.news-top{grid-template-columns:1fr}}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.card-big{display:block;text-decoration:none;color:inherit;border-bottom:1px solid var(--border);padding-bottom:24px}
+.card-big:hover .card-big-title{color:var(--red)}
+.card-big-title{font-family:var(--serif);font-size:1.9rem;font-weight:800;line-height:1.2;color:var(--ink);margin:8px 0 12px;transition:.15s}
+.card-desc{font-size:.88rem;color:var(--muted);line-height:1.7;margin-bottom:10px}
+.card-sm{display:block;text-decoration:none;color:inherit;padding:16px 0;border-bottom:1px solid var(--border)}
+.card-sm:last-child{border:none}
+.card-sm:hover .card-sm-title{color:var(--red)}
+.card-sm-title{font-family:var(--serif);font-size:1rem;font-weight:700;line-height:1.35;color:var(--ink);margin:4px 0 6px;transition:.15s}
+.card-eyebrow{font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.card-meta{font-size:.7rem;color:var(--muted)}
+.news-footer{font-size:.68rem;color:var(--muted);font-style:italic;margin-top:28px;padding-top:16px;border-top:1px solid var(--border)}
+
 </style>
 </head>
 <body>
@@ -357,6 +379,75 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding
     </div>
     <div id="a-result"></div>
   </div>
+
+
+<!-- NEWS SECTION -->
+<div class="news-divider">
+  <div class="news-divider-line"></div>
+  <span class="news-divider-label">Today's Florida & Government News</span>
+  <div class="news-divider-line"></div>
+</div>
+
+<section class="news-section">
+  <div class="news-date">Updated 2026-10-12 · Curated by Heron Media Group</div>
+
+  <!-- Hero + sidebar row -->
+  <div class="news-top">
+    <div class="news-hero"><a href="https://floridaphoenix.com/2026/10/12/bernie-sanders-chris-murphy-and-ro-khanna-are-coming-to-florida-to-campaign-with-angie-nixon/" target="_blank" class="card-big">
+          <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+          <h2 class="card-big-title">Bernie Sanders, Chris Murphy, and Ro Khanna are coming to Florida to campaign with Angie Nixon</h2>
+          <p class="card-desc">Bernie Sanders will take his Fighting Oligarchy Tour to the Sunshine State next weekend, when he will hold four campaign events with Democratic U.S. Senate cand</p>
+          <div class="card-meta">Florida Phoenix · Mon, 12 Oc</div>
+        </a></div>
+    <div class="news-sidebar"><a href="https://floridaphoenix.com/2026/10/12/utilities-make-progress-on-power-restoration-as-hurricane-isaias-recovery-continues/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">Utilities make progress on power restoration as Hurricane Isaias recovery continues</h3>
+      <div class="card-meta">Florida Phoenix · Mon, 12 Oc</div>
+    </a>
+<a href="https://floridapolitics.com/archives/824574-last-call-for-10-12-26-a-prime-time-read-of-whats-going-down-in-florida-politics/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">Last Call for 10.12.26 – A prime-time read of what’s going down in Florida politics</h3>
+      <div class="card-meta">Florida Politics · Mon, 12 Oc</div>
+    </a>
+<a href="https://floridapolitics.com/archives/824581-sunset-isle-marina-escapes-hurricane-isaias-unscathed-despite-being-almost-directly-in-the-storms-path/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">Sunset Isle Marina escapes Hurricane Isaias unscathed, despite being almost directly in the storm’s path</h3>
+      <div class="card-meta">Florida Politics · Mon, 12 Oc</div>
+    </a></div>
+  </div>
+
+  <!-- Grid row -->
+  <div class="news-grid"><a href="https://floridapolitics.com/archives/824577-david-silvers-outraises-outspends-rick-roth-as-sd-26-race-enters-final-month/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">David Silvers outraises, outspends Rick Roth as SD 26 race enters final month</h3>
+      <div class="card-meta">Florida Politics · Mon, 12 Oc</div>
+    </a>
+<a href="https://floridapolitics.com/archives/824567-anna-corman-keep-hillsboroughs-school-promise/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">Anna Corman: Keep Hillsborough’s school promise</h3>
+      <div class="card-meta">Florida Politics · Mon, 12 Oc</div>
+    </a>
+<a href="https://floridapolitics.com/archives/824524-jackie-toledo-sued-for-17k-in-unpaid-debt/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">Jackie Toledo sued for $17K in unpaid debt</h3>
+      <div class="card-meta">Florida Politics · Mon, 12 Oc</div>
+    </a>
+<a href="https://floridapolitics.com/archives/824543-jimmy-patronis-aims-to-connect-hurricane-isaias-impacted-homeowners-with-fema-state-aid/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">Jimmy Patronis aims to connect Hurricane Isaias-impacted homeowners with FEMA, state aid</h3>
+      <div class="card-meta">Florida Politics · Mon, 12 Oc</div>
+    </a>
+<a href="https://www.route-fifty.com/digital-government/2026/10/how-state-and-local-governments-are-celebrating-digital-inclusion-week/416534/" target="_blank" class="card-sm">
+      <div class="card-eyebrow" style="color:#1a56c0">POLITICS</div>
+      <h3 class="card-sm-title">How state and local governments are celebrating Digital Inclusion Week</h3>
+      <div class="card-meta">Route Fifty · Fri, 09 Oc</div>
+    </a></div>
+
+  <div class="news-footer">
+    All articles sourced from Florida Phoenix, Florida Politics, Route Fifty, and other public news feeds.
+    Heron Media Group does not own or author these articles.
+  </div>
+</section>
 
 </main>
 
